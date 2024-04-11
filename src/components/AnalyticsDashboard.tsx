@@ -49,39 +49,39 @@ const AnalyticsDashboard = ({avgVisitorsPerDay, topCountries, amtExportsToday, a
     <div className='flex flex-col gap-6'>
         <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-6">
               <Card className='w-full mx-auto max-w-xs'>
-                  <p className=" text-tremor-default text-dark-tremor-content">
+                  <p className=" text-tremor-default text-tremor-content">
                       Avg. visitors/day
                   </p>
-                  <p className='text-3xl text-dark-tremor-content-strong font-semibold'>
+                  <p className='text-3xl text-tremor-content-inverted font-semibold'>
                       {avgVisitorsPerDay}
                   </p>
               </Card>  
 
               <Card className='w-full mx-auto max-w-xs'>
-                  <p className="flex gap-2.5 text-tremor-default text-dark-tremor-content">
+                  <p className="flex gap-2.5 text-tremor-default text-tremor-content">
                       No. visitors/day
                       <Badge percentage={(amtVisitorsToday / Number (avgVisitorsPerDay) - 1) * 100}/>
                   </p>
-                  <p className='text-3xl text-dark-tremor-content-strong font-semibold'>
+                  <p className='text-3xl text-tremor-content-inverted font-semibold'>
                       {amtVisitorsToday}
                   </p>
               </Card>  
 
               <Card className='w-full mx-auto max-w-xs'>
-                  <p className=" text-tremor-default text-dark-tremor-content">
+                  <p className=" text-tremor-default text-tremor-content">
                       Avg. Exports/day
                   </p>
-                  <p className='text-3xl text-dark-tremor-content-strong font-semibold'>
+                  <p className='text-3xl text-tremor-content-inverted font-semibold'>
                       {avgExportsPerDay}
                   </p>
               </Card>  
 
               <Card className='w-full mx-auto max-w-xs'>
-                  <p className="flex gap-2.5 text-tremor-default text-dark-tremor-content">
+                  <p className="flex gap-2.5 text-tremor-default text-tremor-content">
                       No. export/day
                       <Badge percentage={(amtExportsToday / Number (avgExportsPerDay) - 1) * 100}/>
                   </p>
-                  <p className='text-3xl text-dark-tremor-content-strong font-semibold'>
+                  <p className='text-3xl text-tremor-content-inverted font-semibold'>
                       {amtExportsToday}
                   </p>
               </Card>  
